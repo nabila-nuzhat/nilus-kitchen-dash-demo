@@ -6,4 +6,15 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-2 conncet DB function await needed or not_server.js_ Screenshots of Chatgpt + Claude suggestion compare
+2. conncet DB function await needed or not_server.js_ Screenshots of Chatgpt + Claude suggestion compare
+
+3. ??????? why min(1) loginSchema of authSchema.js ????
+const loginSchema = z.object({
+  email: z.string().trim().toLowerCase().pipe(z.email()),
+  password: z.string().min(1),  ??????? why min(1) ???? to make sure it'not empty, and if limit ever increased to min 10 characters frpm 8 then older user's password wont break, is it logical????????
+});
+
+4. message: "Validation failed", 
+??????? why not used here in validateMiddleware.js ?? reference froom To-Task project in  ????
+
+5. when Password Minimum caharacter validation should be added professionally?
