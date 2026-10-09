@@ -1,0 +1,48 @@
+## Version 1 Folder Structure:
+    ** The aiOrderService.js file is a placeholder for Version 2. no need to implement it in Version 1.
+
+    ** better to src folder
+
+    suggested:
+    backend/
+    ├── config/
+    │   └── connectDB.js
+    ├── controllers/
+    │   ├── authController.js
+    │   ├── foodController.js
+    │   ├── customerController.js
+    │   └── orderController.js
+    ├── middleware/
+    │   ├── authMiddleware.js
+    │   ├── validateMiddleware.js
+    │   └── errorMiddleware.js
+    ├── models/
+    │   ├── User.js
+    │   ├── FoodItem.js
+    │   ├── Customer.js
+    │   └── Order.js
+    ├── routes/
+    │   ├── authRoutes.js
+    │   ├── foodRoutes.js
+    │   ├── customerRoutes.js
+    │   └── orderRoutes.js
+    ├── schemas/
+    │   ├── authSchema.js
+    │   ├── foodSchema.js
+    │   └── orderSchema.js
+    ├── services/
+    │   ├── orderService.js
+    │   ├── receiptService.js
+    │   └── aiOrderService.js
+    ├── utils/
+    │   └── generateId.js
+    ├── .env
+    ├── .gitignore
+    ├── app.js
+    └── server.js
+
+## jwt secret key generator command for Node.js: (google suggestion)
+    CAUTION copying from this text file may create broken random key with 2 lines it should be 1 single line
+
+
+

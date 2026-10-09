@@ -1,0 +1,9 @@
+1. why api/health why not "/" when to write api/v1???
+app.get("/api/health", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Nilus Kitchen API is running",
+  });
+});
+
+2 conncet DB function await needed or not_server.js_ Screenshots of Chatgpt + Claude suggestion compare
