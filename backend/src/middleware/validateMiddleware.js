@@ -14,6 +14,6 @@ const validate = (schema) => {
     req.validatedBody = result.data;
     next();
   };
-};
+}
 
 export default validate;
