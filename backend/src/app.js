@@ -2,8 +2,6 @@ import express from "express";
 import cors from "cors";
 // import { registerSchema } from "./schemas/authSchema.js";
 // import { validate } from "./middleware/validateMiddleware.js";
-import { registerSchema } from "./schemas/authSchema.js";
-import validate from "./middleware/validateMiddleware.js";
 const app = express();
 
 app.use(cors({
@@ -20,7 +18,7 @@ app.get("/api/health", (req, res) => { // why api/health why not "/" when to wri
 });
 
 // TEMPORARY TEST ROUTE to test via POSTMAN ---------------
-// // http://localhost:5000/api/test-validation
+// http://localhost:5000/api/test-validation
     // app.post(
     //   "/api/test-validation",
     //   validate(registerSchema),
