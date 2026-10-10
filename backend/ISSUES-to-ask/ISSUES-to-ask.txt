@@ -19,4 +19,8 @@ const loginSchema = z.object({
 
 5. when Password Minimum caharacter validation should be added professionally?
 
-6. why isnt export not working in validateMiddleware js
+6. why isnt export not working in validateMiddleware js ???
+
+-----------------------
+7. ???????? is trim  needed in Category Id in category.js Model????
+  

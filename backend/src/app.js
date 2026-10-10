@@ -10,6 +10,12 @@ app.use(cors({
 }));
 
 app.use(express.json());
+/** Note:
+ * The complete endpoints are:
+  - POST /api/auth/register
+  - POST /api/auth/login
+  The route file defines the URL and middleware sequence; the controller handles the business logic.
+ */
 app.use("/api/auth", authRoutes);
 app.get("/api/health", (req, res) => { // why api/health why not "/" when to write api/v1?
   res.status(200).json({
