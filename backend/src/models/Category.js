@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const categorySchema = new mongoose.Schema(
   {
-    categoryId: {
+    categoryId: { // The categoryId is for the business and receipts. MongoDB also generates its own _id, which we use for database relationships.
       type: String,
       required: true,
       unique: true,
