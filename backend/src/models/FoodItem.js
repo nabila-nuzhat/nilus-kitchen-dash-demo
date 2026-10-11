@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+// updated after adding categories section ------
 const foodItemSchema = new mongoose.Schema(
   {
     foodItemId: {
